@@ -1,0 +1,4 @@
+*.http
+*.sqlite3
+/env
+/venv
