@@ -9,6 +9,8 @@ class Book(models.Model):
         to='Category',
         on_delete=models.PROTECT
     )
+    pub_date = models.DateTimeField(auto_now_add=True)
+    updeate_date = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.title
